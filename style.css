@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html body{
+    width : 100vw;
+    height : 100vh;
+}
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.page1{
+    padding : 2vw 4vw;
+    overflow-x: hidden;
+    background-color: black;
+    color : white;
+}
+
+.page1 .heading{
+    width : 100%;
+    background-color: #ffb900;
+    text-align: center;
+    margin: 0 auto;
+    /* padding : 2vw 4vw; */
+    border-radius: 1.4vw;
+    /* margin-top : 2vh; */
+}
+
+.page1 .heading h1{
+    font-weight: 700;
+    font-size : 7vh;
+    padding : 1vw 0;
+}
+
+.page1 .heading p{
+    font-size: 2.5vh;
+    padding : 2vw 0;
+}
+
+.page1 ul{
+    width :max-content;
+    margin: 0 auto;
+    padding : 3vw 0;
+    text-align: start;
+    
+}
+
+.page1 ul li{
+    line-height: 5vh;
+    font-size: 2.5vh;
+}
+
+
+.page1 form{
+ display: flex;
+  justify-content: center;
+}
+
+.page1 > form > .signup {
+    width : 40%;
+    text-align: start;
+    padding : 0 4vw;
+    border : 1px solid grey;
+    border-radius: 2vh;
+   
+}
+
+.page1 form .signup h1:first-child{
+    font-size: 4vh;
+    font-weight: 600;
+    padding : 2vw 0;
+    text-align: center;
+
+}
+
+
+.page1 form .signup label{
+    font-size : 1vw;
+    font-weight: 600;
+    padding : 4vw 0;
+}
+
+.page1 form .signup .input-box{
+    height : 3.4vh;
+    width :100%;
+    margin : 1vw 0;
+    border-radius: 0.5vw;
+    font-size: 2vh;
+    padding : 0 2vw;
+    background-color: transparent;
+    border : none;
+    border-bottom:1px solid grey;
+    color : grey;
+    /* outline: none; */
+}
+
+.page1 form .signup .gender{
+    font-weight: 500;
+    padding : 0 3vw;   
+}
+
+.page1 form .signup .gender-box{
+    padding :1vw 0;
+}
+
+.page1 form .signup #message{
+    color : grey;
+    height : 7vw;
+    width : 100%;
+    border-radius: 1vw;
+    padding : 1vw 2vw;
+    margin : 2vw 0;
+    background-color: transparent;
+}
+
+.page1 form .signup .submit-box{
+ margin : 2vw 0;
+ width : 100%;
+ display: flex;
+ justify-content: center;
+}
+
+.page1 form .signup .submit-box button{
+   width : 60%;
+   height : 3.5vw;
+   font-size: 1.2vw;
+   font-weight: 600;
+   letter-spacing: 0.2vw;
+   border-radius: 25px;
+   background-color: #ffb900;
+}
+
+hr{
+    background-color: grey;
+}
+
+
+@media (max-width : 600px){
+    .page1 .heading p{
+        font-size: 3vw;
+    }
+    .page1 ul li{
+        font-size :3vw;
+    }
+
+    .page1 form .signup{
+        width : 100%;
+    }
+
+    .page1 form .signup label{
+        font-size: 3vw;
+    }
+
+    .page1 form .signup #message{
+        height : 20vw;
+    }
+
+    .page1 form .signup .submit-box button{
+        height : 6vw;
+        width : 50%;
+        font-size: 3vw;
+    }
+}
